@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>E族之家</title>
+	<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		.zhengti{
+			width: 1560px;
+			height: 100%;
+			margin: 0px auto;
+		}
+		/*最上面的小条*/
+		.zuishang{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 30px;
+			background-color: rgb(244,244,244);
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+		.tou1{
+			position: absolute;
+			left: 110px;
+			line-height: 30px;
+			font-size: 12px;
+		}
+		.tou2{
+			position: absolute;
+			left: 192px;
+			font-size: 12px;
+			line-height: 30px;
+		}
+		.qq{
+			position: absolute;
+			left: 280px;
+			top: 3px;
+		}
+		.qq号{
+			position: absolute;
+			left: 299px;
+			font-size: 12px;
+			line-height: 30px;
+		}
+		.tou3{
+			position: absolute;
+			left: 1099px;
+			line-height: 30px;
+			font-size: 12px;
+		}
+		.tou4{
+			position: absolute;
+			left: 1157px;
+			line-height: 30px;
+			font-size: 12px;
+		}
+		.zsxx{
+			background-color:  rgb(236,236,236);
+			height: 1px;
+			width: 100%;
+			position: absolute;
+			top: 30px;
+		}
+		/*首部部分*/
+		.shoubu{
+			position: absolute;
+			top:31px;
+		}
+		.logo{
+			position: absolute;
+			left: 134px;
+			top: 11px;
+		}
+		.gouwu{
+			position: absolute;
+			left: 1207px;
+			top: 39px;
+			border:1px solid rgb(236,236,236);
+			width: 148px;
+			height: 38px;
+			background-color: rgb(245,245,245);
+		}
+		.g1{
+			display: inline-block;
+			font-size: 14px;
+			line-height: 38px;
+			position: absolute;
+			left: 48px;
+
+		}
+		.g1 span{
+			color: #f28a8a; 		}
+		.gouwuche{
+			position: absolute;
+			left: 22px;
+			top: 4px;
+		}
+		.sousuokuang{
+			position: absolute;
+			left: 460px;
+			top: 40px;
+			border:2px solid #f83838;
+			width: 510px;
+			height: 40px;
+			background-color: #f83838;
+		}
+		.s1{
+			width: 405px;
+			height: 36px;
+		}
+		.s2{
+			width: 90px;
+			height: 36px;
+			background-color: #f83838;
+			border:0px solid #f83838;
+			color: rgb(234,234,234);
+		}
+		/*导航部分*/
+		.daohang{
+			width: 540px;
+			height:50px;
+			position: absolute;
+			left: 191px;
+			top:115px;
+			}
+		.du li{
+			display: inline-block;
+			width: 90px;
+			height: 38px;
+			text-align: center;
+			line-height: 40px;
+			margin: 5px 20px;
+			font-size: 16px;
+			font-family: '微软雅黑'；
+		}
+		.dhx{
+			position: absolute;
+			left: 0px;
+			top: 187px;
+			width: 100%;
+			height: 3px;
+			background-color: #e00304;
+		}
+		.du li:hover{
+			background-color: #e00304;
+			border-radius: 10%;
+			width: 89px;
+			height: 33px;
+		}
+		.xiaozi{
+			position: absolute;
+			left: 110px;
+			top: 29px;
+			font-size: 14px;
+			font-family: '微软雅黑';
+			width:200px;
+			height: 14px;
+		}
+		.quanbu{
+			position: absolute;
+			left: 110px;
+			top: 67px;
+			background-color: rgb(255,255,255);
+			width: 215px;
+			height: 43px;
+		}
+		.qb1{
+			position: absolute;
+			left: 26px;
+			top: 11px;
+		}
+		.qb{
+			position: absolute;
+			left: 77px;
+			line-height: 43px;
+			font-size: 16px;
+		}
+		.zhuti{
+			position: absolute;
+			left: 0px;
+			top: 190px;
+			background-color: rgb(251,251,251);
+			width: 100%;
+			height: 652px;
+		}
+		.fenlei{
+			position: absolute;
+			left: 110px;
+			top: 120px;
+			background-color: rgb(255,255,255);
+			width: 215px;
+			height: 510px;
+		}
+		.fl{
+			position: absolute;
+			left: 76px;
+			top: 19px;
+		}
+		.fl li{
+			list-style: none;
+			margin: 20px 10px;
+
+		}
+		.fl a:hover{
+			color:  #ff6a61;
+
+		}
+		.tupian{
+			position: absolute;
+			width: 973px;
+			height: 563px;
+			left:357px;
+			top: 67px; 
+			background-color: rgb(255,255,255);
+		}
+		.yi{
+			float: left;
+			margin: 8px;
+			width: 220px;
+			height: 251PX;
+			border:1px solid #dbdbdb;
+		}
+		#yii{
+			margin-left: 16px;
+		}
+		.er{
+			text-align: center;
+			font-size: 16px;
+			color: #dbdbdb;
+		}
+		.err{
+			text-align: center;
+		}
+		.xiabiao{
+			position: absolute;
+			left: 0px;
+			top: 842px;
+			height:248px;
+			width: 100%;
+			background-color: rgb(46,46,46);
+		}
+		.u1{
+			width: 64px;
+			height: 111px;
+			position: absolute;
+			top: 21px;
+			left: 119px;
+		}
+		.u1 a{
+			color: #f5f5f5;
+			font-size: 14px;
+		}
+		.u1 li{
+			list-style: none;
+		}
+		#l1{
+			font-size: 16px;
+		}
+		.u2{
+			position: absolute;
+			left: 465px;
+			top: 21px;
+			width: 84px;
+			height: 109px;
+		}
+		.u2 a{
+			font-size: 14px;
+			color: #f5f5f5;
+		}
+		.u2 li{
+			list-style: none;
+		}
+		.u3{
+			position: absolute;
+			left: 737px;
+			top: 21px;
+			width:71px;
+			height: 110px;
+		}
+		.u3 a{
+			font-size: 14px;
+			color: #f5f5f5;
+		}
+		.u3 li{
+			list-style: none;
+		}
+		.u4{
+			position: absolute;
+			left: 1010px;
+			top:21px;
+			width:84px;
+			height: 112px;
+		}
+		.u4 a{
+			font-size: 14px;
+			color: #f5f5f5;
+		}
+		.u4 li{
+			list-style: none;
+		}
+		.u5{
+			position: absolute;
+			width: 84px;
+			height: 111px;
+			left: 1283px;
+			top:21px;
+		}
+		.u5 a{
+			font-size: 14px;
+			color: #f5f5f5;
+		}
+		.u5 li{
+			list-style: none;
+		}
+		.xxx{
+			position: absolute;
+			left: 180px;
+			top: 992px；
+			height: 1px;
+			width: 100%;
+			background-color: #454545；
+		}
+		.xw{
+			position: absolute;
+			width: 550px;
+			height: 15px;
+			font-size: 14px;
+			color: #9e9e9e;
+			left: 509px;
+			top: 178px;
+		}
+		.xxw{
+			position: absolute;
+			width: 580px;
+			height: 14px;
+			font-size:14px;
+			color: #9e9e9e;
+			left: 505px;
+			top: 212px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="zhengti">
+		<div class="zuishang">
+			<a href="#" class="tou1">我的收藏</a>
+			<a href="#" class="tou2">E族之家手机版</a>
+			<img src="images/qq.jpg"/ class="qq">
+			<p class="qq号">32803328</p>
+			<a href="#" class="tou3">扫描加入</a>
+			<a href="#" class="tou4">欢迎来到E族之家，请登录 | 注册</a> 
+		</div>
+		<div class="zsxx"></div>
+		<div class="shoubu">
+			<img src="images/logo.gif"/ class="logo">
+			<div class="gouwu">
+				<img src="images/购物车.gif"/ class="gouwuche">
+				<p class="g1">购物车（<span>0</span>）件</p>
+			</div>
+			<dir class="sousuokuang">
+				<input type="txet" name="sousuo" value="请输入关键词!" class="s1" />
+				<input type="button" name="sousuo" value="搜索" class="s2" />
+			</dir>
+			<div class="daohang">
+				<ul class="du">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">E族生活</a></li>
+					<li><a href="#">E族服务</a></li>
+					<li><a href="#">E族爱心</a></li>
+
+				</ul>
+			</div>	
+		</div>
+		<div class="dhx"></div>
+		<div class="zhuti">
+			<div class="xiaozi">
+				<p>当前位置：E族爱心>食品</p>
+			</div>
+			<div class="quanbu">
+				<img src="images/quanbu.jpg"/ class="qb1">
+				<a href="#" class="qb">全部分类</a>
+			</div>
+			<div class="fenlei">
+				<ul class="fl">
+					<li><a href="#">> 食品</a></li>
+					<li><a href="#">> 生活用品</a></li>
+				</ul>
+			</div>
+			<div class="tupian">
+				<div class="yi" id="yii">
+					<img src="images/tu1.gif">
+					<p class="er">精品辣椒100g</p>
+					<p class="err">¥ 90.00</p>
+				</div>
+				<div class="yi">
+					<img src="images/tu2.gif">
+					<p class="er">特级百香果3斤</p>
+					<p class="err">¥ 90.00</p>
+				</div>
+				<div class="yi">
+					<img src="images/tu3.gif">
+					<p class="er">万威啤酒500ml</p>
+					<p class="err">¥ 90.00</p>
+				</div >
+				<div class="yi">
+					<img src="images/tu4.gif">
+					<p class="er">万威啤酒</p>
+					<p class="err">¥ 90.00</p>
+				</div>
+				<div class="yi" id="yii">
+					<img src="images/tu1.gif">
+					<p class="er">精品辣椒100g</p>
+					<p class="err">¥ 90.00</p>
+				</div>
+				<div class="yi">
+					<img src="images/tu2.gif">
+					<p class="er">特级百香果3斤</p>
+					<p class="err">¥ 90.00</p>
+				</div>
+				<div class="yi">
+					<img src="images/tu3.gif">
+					<p class="er">万威啤酒500ml</p>
+					<p class="err">¥ 90.00</p>
+				</div >
+				<div class="yi">
+					<img src="images/tu4.gif">
+					<p class="er">万威啤酒</p>
+					<p class="err">¥ 90.00</p>
+				</div>
+			</div>
+		</div>
+		<div class="xiabiao">
+				<ul class="u1">
+					<li><a href="#" id="l1">新手上路</a></li>
+					<li><a href="#">售后流程</a></li>
+					<li><a href="#">购物方式</a></li>
+					<li><a href="#">订购方式</a></li>
+				</ul>
+				<ul class="u2">
+					<li><a href="#" id="l1">配送方式</a></li>
+					<li><a href="#">货到付款区域</a></li>
+					<li><a href="#">配送支付查询</a></li>
+					<li><a href="#">支付方式说明</a></li>
+				</ul>
+				<ul class="u3">
+					<li><a href="#" id="l1">购物指南</a></li>
+					<li><a href="#">常见问题</a></li>
+					<li><a href="#">订购方式</a></li>
+					<li><a href="#">注册新会员</a></li>
+				</ul>
+				<ul class="u4">
+					<li><a href="#" id="l1">售后服务</a></li>
+					<li><a href="#">退换货原则</a></li>
+					<li><a href="#">售后服务保证</a></li>
+					<li><a href="#">换货流程</a></li>
+				</ul>
+				<ul class="u5">
+					<li><a href="#" id="l1">关于我们</a></li>
+					<li><a href="#">网站故障报告</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">投诉与建议</a></li>
+				</ul>	
+				<div class="xw">
+					<p>E族生活 | 居家维修保养 | 住宿优惠信息 | 出行接送 | E族爱心 | 积分商城</p>     
+		        </div>
+		        <div class="xxw">
+		        	<p>@2017-2018 E族之家 版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号</p>
+		        </div>
+		</div>
+		<div class="xxx"></div>
+	</div>
+
+</body>
+</html>

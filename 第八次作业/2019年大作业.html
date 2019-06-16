@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>买猜商城</title>
+	<style>
+		*{
+			padding: 0px;
+			margin: 0px ;
+		}
+		.zhengti{
+			width: 100%;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+		ul, li{
+			list-style: none;
+		}
+		/*toubu*/
+		.toubu{
+			position: absolute;
+			top:0px;
+			left: 0px;
+			width:100%;
+			height: 36px; 
+			margin:0px auto;
+		}
+		.tou1{
+			position: absolute;
+			left: 892px;
+			font-size: 13px;
+		    top: 12px;
+			color: #5d5a5c;
+			margin: 0px;
+		}
+		.tou2{
+			position: absolute;
+			left: 1056px;
+			font-size: 15px; 
+			top: 11px;
+			color: #5d5a5c;
+			text-decoration: none;
+		}
+		.tou3{
+			position: absolute;
+			left: 1130px;
+			top: 11px;
+			color: #5d5a5c;
+			font-size: 15px;
+			text-decoration: none;
+		}
+		.tou4{
+			position: absolute;
+			left: 1234px;
+			top: 11px;
+			color: #5d5a5c;
+			font-size: 15px;
+			border:0px;
+		}
+		.tou5{
+			position: absolute;
+			left: 1333px;
+			top: 11px;
+			font-size: 15px;
+			color: #5d5a5c;
+			border:0px;
+		}
+		.tou6{
+			position: absolute;
+			left: 1432px;
+			top: 11px;
+			width: 88px;
+			height: 36px;
+		}
+		.tou6 a{
+			font-size: 15px;
+			color: #5d5a5c;
+			text-decoration: none;			
+		}
+		.tou7{
+			position: absolute;
+			top: 11px;
+			left: 1511px;
+		}
+		.tou8{
+			position: absolute;
+			top: 11px;
+			left:1541px;
+		}
+		/*搜索部分*/
+		.sousuoxiangguan{
+			width: 1200px;
+			margin:0px auto;
+		}
+		.logo{
+			position: absolute;
+			top: 66px;
+			left: 360px;
+		}
+		.sousuokuang{
+			position: absolute;
+			top:80px;
+			left: 773px;
+			width: 599px;
+			height: 44px;
+			border:1px solid #393942;
+		}
+		.s1{
+			position: absolute;
+			left: 284px;
+			top: 15px;
+			border:0px;
+			color: #dfdfdf;
+		}
+		.sousuo{
+			position: absolute;
+			left: 538px;
+			top: 4px;
+			padding-left: 11px;
+
+		}
+		.jg{
+			position: absolute;
+			left: 536px;
+			width: 2px;
+			height: 44px;
+			background-color: rgb(204,204,204);
+		}
+		.gwc{
+			position: absolute;
+			top: 93px;
+			left: 1525px;
+		}
+		/*导航*/
+		.daohang{
+			position: absolute;
+			top: 160px;
+			left: 376px;
+			width: 1156px;
+			height: 29px;
+			margin: 0px auto;
+		}
+		.qf1{
+			position: absolute;
+			font-size: 15px;
+			border: 0px;
+		}
+		.dh{
+			position: absolute;
+			top: 0px;
+			left: 152px;
+			width: 1004px; 
+			height: 26px;
+			margin: 0px;
+			padding: 0px;
+			}
+		.dh li{
+			display: inline-block;
+			font-size: 15px;
+			text-align: top;
+			padding: 0px;
+			margin-left: 70px;
+			color: #050505;
+			padding-bottom: 4px;
+		}
+		#dh1{
+			margin: 0px;
+		}
+		.dh li:hover{
+			color: #3aa747;
+			border-bottom:3px solid #3aa747;
+		}
+		#x1_1{
+			width: 100%;
+			height: 4px;
+			position: absolute;
+			top: 188px;
+			left: 0px;
+			margin: 0px auto;
+		}
+		.x1{
+			width: 1900px;
+			height: 4px;
+			margin:0px auto;
+			background-color: #3aa747;
+		}
+		.datu{
+			position: absolute;
+			width:100%;
+			height: 670px;
+			top: 192px;
+			left: 0px;
+		}
+		#datu1{
+			width: 100%;
+			height: 670px;
+		}
+		.xiaozi{
+			position: absolute;
+			width: 1170px;
+			height: 25px;
+			left: 391px;
+			top: 883px;
+			margin: 0px auto;
+		}
+		.xz1{
+			font-size: 18px;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+		.xz1 span{
+			font-size: 14px;
+			color: #797777;
+		}
+		.xz2{
+			position: absolute;
+			left: 1061px;
+			top: 13px;
+			font-size: 14px;
+			color: #797777;
+		}
+		.biaoge{
+			position: absolute;
+			left: 356px;
+			top: 924px;
+		}
+		table,tr,td{
+			display: inline-block;
+		}
+		table{
+			width: 1194px;
+			height: 133px;
+		}
+		td{
+			width: 100px;
+			height: 44px;
+			padding: 0px;
+			line-height: 44px;
+			text-align: center;
+		}
+		tr{
+			border:1px #b7b7b7 solid;
+			width: 1196px;
+			height: 45px;
+		}
+		.td1{
+			width: 99px;
+			height: 44px;
+			background-color: rgb(229,229,229);
+		}
+		.tupianqun{
+			position: absolute;
+			left: 374px;
+			top:1120px; 
+			width: 1212px;
+			height: 662px;
+			margin: 0px auto;
+		}
+		.i1{
+			float: left;
+			width: 270px;
+			height: 291px;
+			border:1px solid rgb(135,135,135);
+			margin-right: 31px;
+			margin-bottom: 46px;
+		}
+		.i1 img{
+			width: 270px;
+			height: 291px;
+		}
+		.xdh{
+			position: absolute;
+			width: 100%;
+			height: 102px;
+			left: 0px;
+			top: 1879px;
+			background-color: rgb(245,245,245);
+			margin: 0px auto;
+		}
+		.xd1{
+			position: absolute;
+			left: 399px;
+			top: 28px;
+			width: 250px;
+			height: 47px;
+			border-right:1px solid rgb(224,224,224);
+		}
+		.p1{
+			position: absolute;
+			left: 70px;
+			top: 5px;
+			font-size: 19px;
+			color: rgb(51,51,51);
+		}
+		.p2{
+			position: absolute;
+			left: 70px;
+			top: 33px;
+			font-size: 13px;
+			color: rgb(51,51,51);
+		}
+		.xd1 img{
+			position: absolute;
+			top: 2px;
+			left: 0px;
+		}
+		.xd2{
+			position: absolute;
+			left: 695px;
+			top: 28px;
+			width: 250px;
+			height: 47px;
+			border-right:1px solid rgb(224,224,224);
+		}
+		.xd3{
+			position: absolute;
+			top: 28px;
+			left: 1018px;
+			width: 250px;
+			height: 47px;
+			border-right:1px solid rgb(224,224,224);
+		}
+		.xd4{
+			position: absolute;
+			top: 28px;
+			left: 1293px;
+			width: 250px;
+			height: 47px;
+		}
+		.xiabiao{
+			position: absolute;
+			left: 0px;
+			top: 1981px;
+			width: 100%;
+			height: 99px;
+			margin: 0px auto;
+			background-color:rgb(50,50,50); 
+		}
+		.xw{
+			position: absolute;
+			left: 598px;
+			top:33px;
+			width: 730px;
+			height: 14px;
+			color: white;
+			font-size: 16px;
+		}
+		.xxw{
+			position: absolute;
+			left: 826px;
+			top: 71px;
+			width: 274px;
+			height: 14px;
+			font-size: 14px;
+			color: white; 
+		}
+		.youbiao{
+			position: fixed;
+			right: 0px;
+			top: 191px;
+			width: 78px;
+			height: 591px;
+			background-color: #1b1d19;
+		}
+		.y1{
+			position: absolute;
+			top:0px;
+			left: 5px;
+			width: 68px;
+			height: 117px;
+			border-bottom:2px solid #595e5d;
+		}
+		.y1 img{
+			position: absolute;
+			top: 52px;
+			left: 20px;
+		}
+		.y2{
+			position: absolute;
+			top: 119px;
+			left: 5px;
+			width: 68px;
+			height: 117px;
+			border-bottom:2px solid #595e5d;
+		}
+		.y2 img{
+			position: absolute;
+			top: 44px;
+			left: 21px;
+		}
+		.y3{
+			position: absolute;
+			top: 238px;
+			left: 5px;
+			width: 68px;
+			height: 117px;
+			border-bottom:2px solid #595e5d;
+		}
+		.y3 img{
+			position: absolute;
+			top: 37px;
+			left: 20px;
+		}
+		.y4{
+			position: absolute;         
+			left: 5px;
+			top: 356px;
+			width: 68px;
+			height: 117px;
+			border-bottom:2px solid #595e5d;
+		}
+		.y4 img{
+			position: absolute;
+			left: 20px;
+			top: 45px;
+		}
+		.y5{
+			position: absolute;
+			left: 5px;
+			top: 474px;
+			width: 68px;
+			height: 117px;
+		}
+		.y5 img{
+			position: absolute;
+			top: 44px;
+			left: 20px;
+		}
+		.hr{
+			position: relative;
+			top : -54px;
+			width: 272px;
+			height: 51px;
+			background-color: rgba(76,76,76,0.9);
+		}
+		.hr p{
+			position: relative;
+			top: 9px;
+			font-size: 15px;
+			color: white;
+			text-align: center;	
+		}
+		.i1{
+			position: relative;
+		}
+		.i1:hover .hr{
+			width: 272px;
+			height: 293px;
+			background-color: rgba(76,76,76,0.9);
+			position: absolute;
+			top:0px;
+			left: 0px;
+		}
+		.i1:hover .hr p{
+			position: relative;
+			top: 100px;
+			line-height: 50px;
+			text-align: center;
+			font-size: 22px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="zhengti">
+		<div class="toubu">
+			<p class="tou1">嘿，欢迎来买猜商城！</p>
+			<a href="#" class="tou2">请登录</a>
+			<a href="#" class="tou3">免费注册</a>
+			<select class="tou4" name="我的b订单">
+				<option>我的b订单</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+			<select class="tou5" name="我的买猜">
+				<option>我的买猜</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<div class="tou6"><a href="#" >帮助中心</a></div>
+			<img src="所需小图/wb.png" class="tou7"/>
+			<img src="所需小图/wx.png" class="tou8"/>
+		</div>
+		<!--搜索相关html-->
+		<div class="sousuoxiangguan">
+			<div class="logo">
+					<img src="所需小图/logo.png" class="lo">
+			</div>
+			<div class="sousuokuang">
+				<input type="text" name="sousuo" value="请输入搜索内容"  class="s1" color>
+				<div class="jg"></div>
+				<div class="sousuo"> 
+					<img src="所需小图/search.png">
+				</div>
+			</div>
+			<div class="gwc">
+				<img src="所需小图/cart.png">
+			</div>
+		</div>
+		<!--导航-->
+		<div class="daohang">
+			<select class="qf1" name="quanbu">
+				<option>全部商品分类</option>
+				<option>2</option>
+			</select>
+			<ul class="dh">
+				<li id="dh1"><a href="#">首页</a></li>
+				<li><a href="#">名酒</a></li>
+				<li><a href="#">茗茶</a></li>
+				<li><a href="#">玉石</a></li>
+				<li><a href="#">休闲食品</a></li>
+				<li><a href="#">洗护用品</a></li>
+				<li><a href="#">土特产</a></li>
+				<li><a href="#">积分商城</a></li>
+				<li><a href="#">抽奖游戏</a></li>
+			</ul>
+		</div>
+		<div id="x1_1"><div class="x1"></div></div>
+		<div class="datu">
+				<img src="所需小图/banner.png" id="datu1" />
+		</div>
+		<div class="xiaozi">
+			<p class="xz1">首页<span> >  玉石</span></p>
+			<p class="xz2">共200件相关商品</p>
+		</div>
+		<div class="biaoge">
+			<table>
+				<tr>
+					<td class="td1">玉石</td>
+					<td><a href="#">白玉</a></td>
+					<td><a href="#">碧玉</a></td>
+					<td><a href="#">黄玉</a></td>
+					<td><a href="#">和田玉</a></td>
+					<td><a href="#">翡翠</a></td>
+					<td><a href="#">绿松玉</a></td>
+					<td><a href="#">墨玉</a></td>
+				</tr>
+				<tr>
+					<td class="td1">其他</td>
+					<td><a href="#">吊坠</a></td>
+					<td><a href="#">扳指</a></td>
+					<td><a href="#">手镯</a></td>
+				</tr>
+				<tr>
+					<td class="td1">地区</td>
+					<td><a href="#">北京</a></td>
+					<td><a href="#">安徽</a></td>
+					<td><a href="#">福建</a></td>
+					<td><a href="#">内蒙古</a></td>
+					<td><a href="#">宁夏</a></td>
+					<td><a href="#">黑龙江</a></td>
+					<td><a href="#">河北</a></td>
+					<td class="td2"><a href="#">更多</a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="tupianqun">
+			<div class="i1">
+				<img src="所需小图/img1.png"/>
+			    <div class="hr">
+				    <p>竞猜价：¥399.00<br>
+				    翡翠千手观音吊坠</p>
+			    </div>
+			</div>
+			<div class="i1">
+				<img src="所需小图/img2.png" id="i22">
+				<div class="hr">
+					<p>竞猜价：¥ 1980.00</p>
+					<p>翡翠龙凤吊坠</p>
+				</div>
+			</div>
+			<div class="i1">
+				<img src="所需小图/img3.png">
+				<div class="hr">
+					<p>竞猜价：¥ 199.00</p>
+					<p>翡翠花蕊吊坠</p>
+				</div>
+			</div>
+			<div class="i1">
+				<img src="所需小图/img4.png">
+				<div class="hr">
+					<p>竞猜价：¥ 199.00</p>
+					<p>翡翠如意吊坠</p>
+				</div>
+			</div>
+			<div class="i1">
+				<img src="所需小图/img5.png">
+				<div class="hr">
+					<p>竞猜价：¥ 99.00</p>
+					<p>翡翠蝉吊坠</p>
+				</div>
+			</div>
+			<div class="i1">
+				<img src="所需小图/img6.png">
+				<div class="hr">
+					<p>竞猜价：¥ 99.00</p>
+					<p>翡翠观音（浅色）吊坠</p>
+				</div>
+			</div>
+			<div class="i1">
+				<img src="所需小图/img7.png">
+				<div class="hr">
+					<p>竞猜价：¥ 199.00</p>
+					<p>翡翠平安扣（深色）吊坠</p>
+				</div>
+			</div>
+			<div class="i1">
+				<img src="所需小图/img8.png">
+				<div class="hr">
+					<p>竞猜价：¥ 199.00</p>
+					<p>翡翠如意吊坠</p>
+				</div>
+			</div>
+		</div>
+		<div class="xdh">
+			<div class="xd1">
+				<img src="所需小图/f1.png"/>
+				<p class="p1">资质认证</p>
+				<p class="p2">服务商100%实名认证</p>
+			</div>
+			<div class="xd2">
+				<img src="所需小图/f2.png"/>
+				<p class="p1">支付安全</p>
+				<p class="p2">明码标价支付及信息安全</p>
+			</div>
+			<div class="xd3">
+				<img src="所需小图/f3.png"/>
+				<p class="p1">保险赔付</p>
+				<p class="p2">为您提供担保赔付</p>
+			</div>
+			<div class="xd4">
+				<img src="所需小图/f4.png"/>
+				<p class="p1">售后无忧</p>
+				<p class="p2">服务出现问题经理全程跟进</p>
+			</div>
+		</div>
+		<div class="xiabiao">
+			<div class="xw">
+				<p>首页  |  工商代理  |  股权交易与更变  |  企业贷款  |  办公室租赁  |  社保公积金代理  |  法律服务</p>
+			</div>
+			<div class="xxw">
+				<p>@2017-2018 买猜商城有限公司 版权所有</p>
+			</div>
+		</div>
+		<ul class="youbiao">
+			<li class="y1"><img src="所需小图/cart1.png"></li>
+			<li class="y2"><img src="所需小图/qq.png"></li>
+			<li class="y3"><img src="所需小图/zuji.png"></li>
+			<li class="y4"><img src="所需小图/erweima.png"></li>
+			<li class="y5"><img src="所需小图/gotop.png"></li>
+		</ul>
+	</div>
+
+</body>
+</html> 
